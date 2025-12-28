@@ -1,0 +1,63 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #0e141b;
+  color: #e5e5e5;
+  margin: 0;
+  padding: 2rem;
+}
+
+main {
+  max-width: 600px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+input, button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+button {
+  background: #1b2838;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2a475e;
+}
+
+#status {
+  margin-top: 1rem;
+  opacity: 0.8;
+}
+
+#result {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+details {
+  background: #161d26;
+  padding: 0.75rem;
+  margin-top: 1rem;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.85rem;
+  opacity: 0.6;
+}

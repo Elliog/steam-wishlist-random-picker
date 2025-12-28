@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Steam Wishlist Random Picker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<main>
+  <h1>Steam Wishlist Random Picker</h1>
+
+  <section>
+    <input
+      id="steamid"
+      type="text"
+      placeholder="SteamID64 (17 chiffres)"
+    />
+    <button onclick="pick()">Pick un jeu au hasard</button>
+
+    <p id="status"></p>
+    <h2 id="result"></h2>
+  </section>
+
+  <section class="help">
+    <details>
+      <summary>Comment trouver mon SteamID ?</summary>
+      <p>
+        1. Va sur ton profil Steam<br>
+        2. Clique sur « Modifier le profil »<br>
+        3. Copie l’URL contenant <code>/profiles/</code>
+      </p>
+      <p>
+        Exemple :<br>
+        <code>https://steamcommunity.com/profiles/7656119XXXXXXXXXX</code>
+      </p>
+    </details>
+
+    <details>
+      <summary>Rendre ma wishlist publique</summary>
+      <p>
+        Steam → Paramètres → Confidentialité<br>
+        Mettre <strong>Détails des jeux</strong> sur <strong>Public</strong>
+      </p>
+    </details>
+
+    <details>
+      <summary>Extraire mon SteamID depuis une URL</summary>
+      <input
+        id="profileUrl"
+        type="text"
+        placeholder="Colle l’URL de ton profil Steam"
+      />
+      <button onclick="extractId()">Extraire SteamID</button>
+      <p id="steamIdResult"></p>
+    </details>
+
+    <details>
+      <summary>Limitations</summary>
+      <p>
+        • Wishlist obligatoirement publique<br>
+        • Les profils <code>/id/username</code> ne sont pas convertibles sans backend
+      </p>
+    </details>
+  </section>
+</main>
+
+<footer>
+  <p>Projet open-source — hébergement GitHub Pages</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
